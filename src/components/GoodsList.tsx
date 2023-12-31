@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useAppSelector } from '../app/hooks';
 import { useDispatch } from 'react-redux';
 import { actions as goodsActions } from '../features/goods';
@@ -22,6 +22,9 @@ export const GoodsList = () => {
     addGood(newGood);
     setNewGood('');
   };
+
+  useEffect(() => {
+   }, []);
 
   return (
     <section className="goods">
